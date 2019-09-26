@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  background: #00AEB5;
+}
+
+.menu ul a {
+  color: white !important;
+}
+
+header {
+  height: unset;
+  background: transparent;
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    height: unset !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: unset !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: unset !important;
+  }
+}
+
+header nav .nav-btn span {
+  background: #00AEB5 !important;
+}
+
+header .logo a {
+  color: #00AEB5 !important;
+}
+
+header .links a {
+  font-weight: bold;
+}
+
+header .links a:hover {
+  color: #00AEB5 !important;
+}
+
+.content {
+  max-width: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h5 {
+  text-align: center;
+  font-size: 24px;
+  color: #00AEB5;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .content {
+    max-width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    max-width: 40%;
+  }
+}
+
+.content label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.content label span {
+  font-size: 18px;
+  color: #2C3E50;
+  margin: 12px 0;
+}
+
+.content label input {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #00AEB5;
+  font-size: 16px;
+}
+
+.content label input::placeholder {
+  color: rgba(44, 62, 80, 0.5);
+  font-size: 16px;
+}
+
+.content #option {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 0.3px solid #2C3E50;
+}
+
+.content #option a {
+  color: #D90606;
+  text-decoration: none;
+}
+
+.content #option a:hover {
+  color: #00AEB5;
+}
+
+.content a {
+  padding: 15px 0;
+  color: #D90606;
+  text-decoration: none;
+  text-align: center;
+}
+
+.content .btn {
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 30px;
+}

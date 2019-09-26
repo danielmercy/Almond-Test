@@ -1,0 +1,18 @@
+$break-mobile: 425px;
+$break-tablet: 768px;
+$break-laptop: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-mobile) { @content; }
+  }
+  @if $media == tablet {
+    @media only screen and (max-width: $break-tablet) { @content; }
+  }
+  @else if $media == laptop {
+    @media only screen and (min-width: $break-tablet + 1) and (max-width: $break-laptop) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-laptop) { @content; }
+  }
+}

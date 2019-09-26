@@ -1,0 +1,133 @@
+@import './shared.scss';
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background: $primary;
+
+    ul  a {
+        color: white !important;
+    }
+}
+
+header {
+    height: unset;
+    background: transparent;
+
+    @include respond-to(handhelds) {
+        height: unset !important;
+    }
+
+    @include respond-to(tablet) {
+        height: unset !important;
+    }
+
+    @include respond-to(laptop) {
+        height: unset !important;
+    }
+
+    nav .nav-btn {
+        span {
+            background: $primary !important;
+        }
+    }
+
+    
+
+    .logo {
+        a { color: $primary !important; }
+    }
+
+    .links {
+        a {
+            font-weight: bold;
+
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+}
+
+.content {
+    max-width: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        text-align: center;
+        font-size: 24px;
+        color: $primary;
+        margin: 20px 0;
+    }
+
+    @include respond-to(handhelds) {
+        max-width: 90% !important;
+    }
+
+    @include respond-to(tablet) {
+        max-width: 50%;
+    }
+
+    @include respond-to(laptop) {
+        max-width: 40%;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+
+        span {
+            font-size: 18px;
+            color: $header-link-color;
+            margin: 12px 0;
+        }
+
+        input {
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: 1px solid $primary;
+            font-size: 16px;
+
+            &::placeholder {
+                color: rgba(44, 62, 80, 0.5);
+                font-size: 16px;
+            }
+        }
+    }
+
+    #option {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 0.3px solid #2C3E50;
+
+        a {
+            color: #D90606;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    a {
+        padding: 15px 0;
+        color: #D90606;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        padding: 15px;
+        margin-top: 30px; 
+    }
+}
