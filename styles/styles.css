@@ -1011,7 +1011,7 @@ footer .footer .links a span.icon {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
-  border: 1px solid #00AEB5;
+  border: 1px solid white;
 }
 
 .btn:hover {
